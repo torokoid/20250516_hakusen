@@ -16,6 +16,18 @@
     color: #fff;
   }
 
+h1 span.yellow {
+    display: inline-block;
+    background: #ffff00;
+    color: #ff0000;
+    line-height: 1;              /* 重要: 行高を強制 */
+    padding: 0.15em 0.05em;      /* 上下にわずかに余裕 */
+    vertical-align: middle;      /* ベースラインズレ防止 */
+    box-decoration-break: clone; /* 行をまたぐ際の分割補完 */
+}
+
+
+<!--
 h1 {
     position: relative;
     display: inline-block;
@@ -30,6 +42,8 @@ h1::after {
     background: #ffff00;
     z-index: -1;
 }
+-->
+
 
 h2 {
     position: relative;

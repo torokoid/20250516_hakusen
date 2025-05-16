@@ -31,6 +31,21 @@ h2::after {
     z-index: -1;
 }
 
+a.p:hover {
+position: relative;
+text-decoration: none;
+}
+a.p span {
+display: none;
+position: relative;
+top: -0.5em;
+left: 2em;
+}
+a.p:hover span {
+border: none;
+display: block;
+width: 800px;
+}
 
 <!--
   h2 {
@@ -89,7 +104,7 @@ background:url(https://torokoid.github.io/20250512_tochigi/20250512_013.JPG) cen
 <body>
 
 <!--流れ文字の挿入例-->
-<h1><span class="yellow"><marquee behavior="left">!!! 2025/05/11-12、庭のお花から、FKD外駐車場「大戸屋」のお昼ご飯まで!!!</marquee></span></h1>
+<h1 class="case1"><span class="yellow"><marquee behavior="left">!!! 2025/05/11-12、庭のお花から、FKD外駐車場「大戸屋」のお昼ご飯まで!!!</marquee></span></h1>
 
   <h2 class="case1">これは <span class="yellow">黄色帯</span> のテスト1</h2>
 

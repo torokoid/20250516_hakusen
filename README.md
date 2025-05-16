@@ -16,6 +16,21 @@
     color: #fff;
   }
 
+h1 {
+    position: relative;
+    display: inline-block;
+}
+h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.8em;
+    width: 100%;
+    background: #ffff00;
+    z-index: -1;
+}
+
 h2 {
     position: relative;
     display: inline-block;

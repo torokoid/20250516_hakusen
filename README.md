@@ -16,12 +16,29 @@
     color: #fff;
   }
 
+h2 {
+    position: relative;
+    display: inline-block;
+}
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.8em;
+    width: 100%;
+    background: #ffff00;
+    z-index: -1;
+}
+
+
+<!--
   h2 {
     font-size: 3rem;
     margin: 100px;
     line-height: 1.2;
   }
-
+-->
   /* ケース1: 問題が出る一般的なspan */
   .case1 span.yellow {
     background: #ffff00;
@@ -49,7 +66,8 @@
     color: transparent;
     display: inline-block;
   }
-    
+
+
     
 /*背景を表示させる部分*/
 body::before {
